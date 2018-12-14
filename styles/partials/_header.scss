@@ -1,13 +1,80 @@
 .header {
     // height: 100vh;
     &__heroImage {
-        height: 90vh;
+        overflow: hidden;
+        height: 100vh;
+        background: url(../assets/portfolio-hero-image.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    &__overlay {
+        height: 100vh;
+        background: linear-gradient(to bottom rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    }
+    &__top-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
     }
     &__nav {
-        height: 10vh;
+        display: flex;
+        justify-content: flex-end; 
         &-list {
             list-style: none;
             display: flex;
+            width: 35vw;
+            justify-content: space-around;
+            // align-items: center;
+            // height: 10vh;
         }
+        &-listItem {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+    }
+    &__logo {
+        text-transform: uppercase;
+        // padding-top: 40px;
+        color: $primaryColor;
+        &--span {
+            color: white;
+        }
+    }
+    &__mainHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    &__heroTitle {
+        color: $primaryColor;
+    }
+    &__heroSubTitle {
+        display: block;
+        color: white;
+    }
+    &__borderLeft {
+        position: absolute;
+        bottom: -3px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-left-width: 60vw;
+        border-top-width: 10vh;
+        border-color: transparent transparent transparent white;
+    }
+    &__borderRight {
+        position: absolute;
+        bottom: 0;
+        right: -3px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-left-width: 40vw;
+        border-bottom-width: 10vh;
+        border-color: transparent transparent white transparent;
+        // transform: skew(-2deg, 0)
     }
 }

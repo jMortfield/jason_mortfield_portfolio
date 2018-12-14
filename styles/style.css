@@ -145,13 +145,101 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto; }
+
 .header__heroImage {
-  height: 90vh; }
+  overflow: hidden;
+  height: 100vh;
+  background: url(../assets/portfolio-hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.header__overlay {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)));
+  background: -webkit-linear-gradient(top rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -o-linear-gradient(top rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
+
+.header__top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 40px; }
 
 .header__nav {
-  height: 10vh; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   .header__nav-list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 35vw;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .header__nav-listItem {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black; }
+
+.header__logo {
+  text-transform: uppercase;
+  color: #ffc600; }
+  .header__logo--span {
+    color: white; }
+
+.header__mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 80vh; }
+
+.header__heroTitle {
+  color: #ffc600; }
+
+.header__heroSubTitle {
+  display: block;
+  color: white; }
+
+.header__borderLeft {
+  position: absolute;
+  bottom: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-left-width: 60vw;
+  border-top-width: 10vh;
+  border-color: transparent transparent transparent white; }
+
+.header__borderRight {
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-left-width: 40vw;
+  border-bottom-width: 10vh;
+  border-color: transparent transparent white transparent; }
