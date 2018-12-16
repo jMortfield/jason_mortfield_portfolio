@@ -1,0 +1,18 @@
+.skills {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 2.4rem;
+        justify-content: space-around;
+    }
+    &__item {
+        width: calc(50% - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        svg {
+            width: 100%;
+        }
+    }
+}

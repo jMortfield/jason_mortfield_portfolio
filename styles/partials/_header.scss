@@ -3,7 +3,7 @@
     &__heroImage {
         overflow: hidden;
         height: 100vh;
-        background: url(../assets/portfolio-hero-image.jpg);
+        background: url(../assets/portfolio-hero-image-blackandwhite.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
@@ -15,7 +15,18 @@
     &__top-nav {
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
+        padding-top: 25px;
+    }
+    &__hamburgerMenu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.4rem;
+        z-index: 100;
+        cursor: pointer;
+        &:hover {
+            color: $primaryColor;
+        }
     }
     &__nav {
         display: flex;
@@ -23,20 +34,41 @@
         &-list {
             list-style: none;
             display: flex;
-            width: 35vw;
+            flex-direction: column;
+            width: 100%;
             justify-content: space-around;
-            // align-items: center;
-            // height: 10vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            background: black;
+        }
+        &-exitItem {
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 2.4rem;
+            cursor: pointer;
+            &:hover {
+                color: $primaryColor;
+            }
         }
         &-listItem {
             text-decoration: none;
             text-transform: uppercase;
-            color: black;
+            color: white;
+            font-size: 2.4rem;
+            &:hover {
+                color: $primaryColor;
+            }
         }
     }
     &__logo {
         text-transform: uppercase;
-        // padding-top: 40px;
+        font-size: 1.6rem;
         color: $primaryColor;
         &--span {
             color: white;
@@ -50,10 +82,15 @@
     }
     &__heroTitle {
         color: $primaryColor;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-transform: none;
     }
     &__heroSubTitle {
         display: block;
         color: white;
+        font-size: 2.4rem;
+        font-weight: normal;
     }
     &__borderLeft {
         position: absolute;

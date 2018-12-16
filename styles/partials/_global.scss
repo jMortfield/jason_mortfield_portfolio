@@ -1,12 +1,60 @@
-$primaryColor: rgb(255,198, 0);
+$primaryColor: #ffc600;
+$primaryFont: 'Open Sans', sans-serif;
 
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
+    font-family: $primaryFont;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .wrapper {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.primaryHeader {
+    &--section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+        position: relative;
+        margin-bottom: 40px;
+        // border-right: 2px black solid;
+        &::after {            
+            content: "";
+            color:black;
+            border-right:2px solid black;
+            height: 80%;
+            position: absolute;
+            right: 0;
+            top: 7%;
+        }
+    }
+    &--small {
+        font-size: 1.6rem;
+    }
+    &--subTitle {
+        color: $primaryColor;
+        font-size: 2.4rem;
+        &--black {
+            font-size: 2.4rem;
+        }
+        &--white {
+            color: white;
+            font-size: 2.4rem;
+        }
+    }
 }
