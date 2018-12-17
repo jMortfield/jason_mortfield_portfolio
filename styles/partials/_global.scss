@@ -20,8 +20,27 @@ section {
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
 .hidden {
     visibility: hidden;
+}
+
+.button {
+    background: $primaryColor;
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    &:hover {
+        background: black;
+        color: $primaryColor;
+    }
 }
 
 .primaryHeader {
