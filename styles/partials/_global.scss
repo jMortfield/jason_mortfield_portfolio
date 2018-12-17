@@ -77,3 +77,17 @@ a {
         }
     }
 }
+
+@media (min-width: 768px) {
+    .primaryHeader {
+        &--small {
+            font-size: 2.4rem;
+        }
+        &--subTitle {
+            font-size: 3.2rem;
+            &--black, &--white {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}

@@ -14,3 +14,21 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .about {
+        &__section {
+            display: flex;
+            &--left {
+                width: calc(50% - 10px);
+                margin-right: 20px;
+            }
+            &--right {
+                width: calc(50% - 10px);
+            }
+            &--title {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

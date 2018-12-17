@@ -31,7 +31,7 @@
     &__nav {
         display: flex;
         justify-content: flex-end; 
-        &-list {
+        &--list {
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -45,7 +45,7 @@
             text-align: center;
             background: black;
         }
-        &-exitItem {
+        &--exitItem {
             color: white;
             position: absolute;
             right: 20px;
@@ -56,7 +56,7 @@
                 color: $primaryColor;
             }
         }
-        &-listItem {
+        &--listItem {
             text-decoration: none;
             text-transform: uppercase;
             color: white;
@@ -113,5 +113,30 @@
         border-bottom-width: 10vh;
         border-color: transparent transparent white transparent;
         // transform: skew(-2deg, 0)
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &__hamburgerMenu {
+            font-size: 4.2rem;
+        }
+        &__logo {
+            font-size: 2.4rem;
+        }
+        &__heroTitle {
+            font-size: 4.2rem;
+        }
+        &__heroSubTitle {
+            font-size: 3.2rem;
+        }
+        &__nav {
+            &--exitItem {
+                font-size: 4.2rem;
+            }
+            &--listItem {
+                font-size: 3.2rem;
+            }
+        }
     }
 }
