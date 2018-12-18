@@ -104,4 +104,13 @@ $(function(){
     //   }
     // );
 
+  $(".skills__itemRowSix").waypoint(
+    function () {
+      $(".skills__itemRowSix").addClass("addColor");
+    },
+    {
+      offset: "75%"
+    }
+  );
+
 })

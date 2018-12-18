@@ -12,7 +12,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+    }
+    &__img {
+        flex-grow: 2;
+    }
+    &__text {
+        &--small {
+            font-size: 1.8rem;
+        }
+        &--medium {
+            font-size: 2rem;
+            margin-top: 15px;
+        }
     }
 }
 
@@ -39,6 +50,14 @@
     .skills {
         &__item {
             width: calc(30% - 40px)
+        }
+    }
+}
+
+@media (min-width: 1064px) {
+    .skills {
+        &__item {
+            width: calc(25% - 50px);
         }
     }
 }

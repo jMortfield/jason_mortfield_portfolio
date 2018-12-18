@@ -16,3 +16,31 @@
         padding-bottom: 10px;
     }
 }
+
+@media (min-width: 768px) {
+    .projects {
+        &__item {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__item--reverse {
+            flex-direction: row-reverse;
+        }
+        &__image {
+            width: calc(50% - 15px);
+        }
+        &__description {
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+@media (min-width: 1064px) {
+    .projects {
+        &__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

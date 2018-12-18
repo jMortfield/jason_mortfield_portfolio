@@ -56,3 +56,24 @@
         margin-right: 10px;
     }
 }
+
+@media (min-width: 1064px) {
+    .contact {
+        &__flexBox {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__form {
+            width: calc(75% - 15px);
+        }
+        &__section--right {
+            width: calc(25% - 15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__location {
+            display: block;
+        }
+    }
+}

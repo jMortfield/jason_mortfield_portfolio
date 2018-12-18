@@ -20,7 +20,7 @@
     &__hamburgerMenu {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 5vw;
         font-size: 2.4rem;
         z-index: 100;
         cursor: pointer;
@@ -48,7 +48,7 @@
         &--exitItem {
             color: white;
             position: absolute;
-            right: 20px;
+            right: 5vw;
             top: 20px;
             font-size: 2.4rem;
             cursor: pointer;
@@ -136,6 +136,20 @@
             }
             &--listItem {
                 font-size: 3.2rem;
+            }
+        }
+    }
+
+    @media (min-width: 1064px) {
+        .header {
+            &__logo {
+                font-size: 3rem;
+            }
+            &__heroTitle {
+                font-size: 5.2rem;
+            }
+            &__heroSubTitle {
+                font-size: 4.2rem;
             }
         }
     }
