@@ -18,7 +18,7 @@
         padding-top: 25px;
     }
     &__hamburgerMenu {
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 5vw;
         font-size: 2.4rem;
@@ -37,13 +37,14 @@
             flex-direction: column;
             width: 100%;
             justify-content: space-around;
-            position: absolute;
+            position: fixed;
             top: 0;
             bottom: 0;
             right: 0;
             left: 0;
             text-align: center;
-            background: black;
+            background: rgba(0,0,0,0.9);
+            z-index: 100;
         }
         &--exitItem {
             color: white;
@@ -92,7 +93,7 @@
         font-size: 2.4rem;
         font-weight: normal;
     }
-    &__borderLeft {
+    &__borderLeft, &__navLeft {
         position: absolute;
         bottom: -3px;
         width: 0;
@@ -102,7 +103,7 @@
         border-top-width: 10vh;
         border-color: transparent transparent transparent white;
     }
-    &__borderRight {
+    &__borderRight, &__navRight {
         position: absolute;
         bottom: 0;
         right: -3px;
@@ -114,6 +115,15 @@
         border-color: transparent transparent white transparent;
         // transform: skew(-2deg, 0)
     }
+    &__navLeft, &__navRight {
+        z-index: 100;
+        position: fixed;
+        
+    }
+    &__navLeft {
+        left: 0;
+    }
+
 }
 
 @media (min-width: 768px) {

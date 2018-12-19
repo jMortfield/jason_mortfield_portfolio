@@ -34,6 +34,7 @@
     &__submit {
         margin-top: 10px;
         border: solid 1px black;
+        width: 100%;
     }
         &__infoSection {
         padding-top: 20px;
@@ -45,7 +46,7 @@
         font-size: 2rem;
         margin: 10px 0;
     }
-    &__infoLink:hover {
+    &__infoLink:hover, &__backToTop:hover {
         text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white, -1px 1px 1px white;
     }
     &__location {
@@ -54,6 +55,22 @@
     &__icon {
         font-size: 2rem;
         margin-right: 10px;
+    }
+    &__backToTop {
+        margin-top: 20px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin: 0 auto;
+        p {
+            margin: 0;
+        }
+        i {
+            margin-left: 10px;
+            font-size: 2rem;
+        }
     }
 }
 

@@ -19,12 +19,13 @@
     .about {
         &__section {
             display: flex;
+            justify-content: space-between;
             &--left {
-                width: calc(50% - 15px);
+                width: calc(50% - 20px);
                 margin-right: 20px;
             }
             &--right {
-                width: calc(50% - 15px);
+                width: calc(50% - 20px);
             }
             &--title {
                 font-size: 2.2rem;

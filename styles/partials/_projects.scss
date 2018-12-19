@@ -10,10 +10,16 @@
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         padding: 10px 0;
-        text-shadow: 0 0 1px black;
+        text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black, -1px 1px 1px black;
     }
     &__content {
         padding-bottom: 10px;
+    }
+    &__link {
+        color: black;
+        &:hover {
+            color: $primaryColor;
+        }
     }
 }
 
@@ -28,6 +34,9 @@
         }
         &__image {
             width: calc(50% - 15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         &__description {
             width: calc(50% - 15px);

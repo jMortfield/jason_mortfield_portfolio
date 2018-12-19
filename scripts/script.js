@@ -1,16 +1,16 @@
 $(function(){
 
+  $(".header__nav--listItem, .contact__backToTop").smoothScroll();
+
     $(".header__hamburgerMenu").on("click", function () {
         $(this).toggleClass("hidden");
-        $(".header__nav--list").toggleClass("hidden");
+        $(".header__nav--list, .header__navLeft, .header__navRight").toggleClass("hidden");
     });
 
-    $(".header__nav--exitItem").on("click", function () {
+    $(".header__nav--exitItem, .header__nav--listItem").on("click", function () {
         $(".header__hamburgerMenu").toggleClass("hidden");
-        $(".header__nav--list").toggleClass("hidden");
+      $(".header__nav--list, .header__navLeft, .header__navRight").toggleClass("hidden");
     })
-
-
 
 
 
