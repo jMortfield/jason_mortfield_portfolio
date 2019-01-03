@@ -28,6 +28,10 @@
             color: $primaryColor;
         }
     }
+    &__hamburgerMenu--blackOutline:hover {
+        text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black, -1px 1px 1px black;
+        color: white;
+    }
     &__nav {
         display: flex;
         justify-content: flex-end; 

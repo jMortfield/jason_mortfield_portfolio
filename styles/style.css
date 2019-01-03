@@ -276,6 +276,10 @@ p {
   .header__hamburgerMenu:hover {
     color: #ffc600; }
 
+.header__hamburgerMenu--blackOutline:hover {
+  text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black, -1px 1px 1px black;
+  color: white; }
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +427,9 @@ p {
     justify-content: space-between; }
     .about__section--left {
       width: calc(50% - 20px);
-      margin-right: 20px; }
+      margin-right: 20px;
+      -ms-flex-item-align: center;
+      align-self: center; }
     .about__section--right {
       width: calc(50% - 20px); }
     .about__section--title {
@@ -568,7 +574,8 @@ p {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center;
+    padding-bottom: 75px; } }
 
 .contact {
   text-align: center;
